@@ -5,7 +5,7 @@ import { BASE_URL } from "../../config/dev.env.js";
 
 export const options = {
     stages: [
-        { duration: '30s', target: 100 },
+        { duration: '5s', target: 200 },
     ]
 }
 

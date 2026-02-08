@@ -1,0 +1,14 @@
+{
+  "name": "k6-monitoring",
+  "version": "1.0.0",
+  "description": "K6 Performance Testing And Monitoring Framework",
+  "scripts": {
+    "test:smoke": "k6 run --out opentelemetry tests/smoke/smoke.test.js",
+    "test:load": "k6 run --out opentelemetry tests/load/load.test.js",
+    "test:stress": "k6 run --out opentelemetry tests/stress/stress.test.js",
+    "test:all": "npm run test:smoke && npm run test:load && npm run test:stress"
+  },
+  "devDependencies": {
+    "k6": "^0.0.1"
+  }
+}
